@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "311984276769",
+    "firebase_url": "https://pset6-b440e.firebaseio.com",
+    "project_id": "pset6-b440e",
+    "storage_bucket": "pset6-b440e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311984276769:android:181710fb3e2394d8",
+        "android_client_info": {
+          "package_name": "com.example.lisahabermehl.lisahabermehl_pset6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311984276769-mm0g74d3k5j21bbcs3m3s38ouslu534g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA3O_o7aO9Cv_ajGZbKn9_xx3NzyhmiKk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
