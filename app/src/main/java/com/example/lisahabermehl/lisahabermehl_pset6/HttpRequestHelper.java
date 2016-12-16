@@ -12,26 +12,21 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * Created by lisahabermehl on 08/12/16.
+ * This class
  */
 
 public class HttpRequestHelper {
 
-    private static String TAG = MainActivity.class.getSimpleName();
-    private static final String url = "http://api.giphy.com/v1/gifs/search?q=";
+    private static final String url = "http://api.giphy.com/v1/gifs/";
 
     static String response;
 
     protected static synchronized String downloadFromServer(String... params) throws IOException {
 
-        Log.d("PARAMS_DFS: ", params[0]);
-
-        String result = "";
-        String apiKey = "dc6zaTOxFJmzC";
+        // make a complete URL by combining all the different pieces you've gathered
         String chosenTag = params[0];
+        String apiKey = "dc6zaTOxFJmzC";
         String completeURL = url + chosenTag + "&api_key=" + apiKey;
-
-        Log.d("completeURL: ", completeURL);
 
         URL new_url = new URL(completeURL);
 
@@ -39,33 +34,22 @@ public class HttpRequestHelper {
 
         if (url != null) {
 
-            Log.d("1", "URL not equal to null");
-
+            // open a new HttpURLConnection with the GET method
             connection = (HttpURLConnection) new_url.openConnection();
-
             connection.setRequestMethod("GET");
-            Log.d("2", "got past setrequestmethod");
 
             // read the response
             InputStream in = new BufferedInputStream(connection.getInputStream());
-            Log.d("3", "got past inputstream");
-
-//            response = convertStreamToString(in);
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
             StringBuilder sb = new StringBuilder();
 
+            // store/organize the response
             String line;
-
             while ((line = br.readLine()) != null) {
                 sb.append(line).append('\n');
             }
             response = sb.toString();
-
-            }
-
-        Log.d("RESPONSE: ", response);
+        }
         return response;
     }
-
-
 }

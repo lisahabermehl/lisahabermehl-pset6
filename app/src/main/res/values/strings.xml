@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">lisahabermehl-pset6</string>
+    <string name="app_name">GIF-a-rator</string>
+
+    <string name="minimum_password">Please choose a password of more than 6 characters.</string>
+    <string name="auth_failed">Incorrect username or password. Please try again.</string>
+    <string name="title_log_in">LOG IN</string>
+    <string name="hint_email">EMAIL</string>
+    <string name="hint_password">PASSWORD</string>
+    <string name="button_log_in">LOG IN</string>
+    <string name="button_reset_password">Forgot your password?</string>
+    <string name="button_register">Click here to register</string>
+
 </resources>
