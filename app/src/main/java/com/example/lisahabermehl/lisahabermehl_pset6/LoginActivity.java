@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
@@ -38,9 +39,6 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
             finish();
         }
-
-        // set the view now
-        setContentView(R.layout.activity_login);
 
         // make sure the following xml parts are known by this class
         inputEmail = (EditText) findViewById(R.id.email);
