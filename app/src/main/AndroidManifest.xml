@@ -8,10 +8,10 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Giffy a GIF"
+        android:label="Log In"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,8 +27,8 @@
             android:label="Reset Password"
             android:theme="@style/AppTheme"/>
 
-        <activity android:name=".LoginActivity"
-            android:label="Log In"
+        <activity android:name=".MainActivity"
+            android:label="Giffy a GIF"
             android:theme="@style/AppTheme"/>
 
         <activity android:name=".DetailActivity"
