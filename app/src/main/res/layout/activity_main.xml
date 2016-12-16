@@ -21,6 +21,7 @@
             android:text="CLICK HERE TO SEARCH FOR GIFS"/>
 
         <ImageView
+            android:layout_gravity="end"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/pset6b"/>
@@ -31,7 +32,10 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin_thicker"
+        android:paddingBottom="@dimen/activity_horizontal_margin_thicker"
+        android:paddingLeft="@dimen/activity_vertical_margin_thicker"
+        android:paddingRight="@dimen/activity_vertical_margin_thicker"
         android:numColumns="3"/>
 
 </LinearLayout>

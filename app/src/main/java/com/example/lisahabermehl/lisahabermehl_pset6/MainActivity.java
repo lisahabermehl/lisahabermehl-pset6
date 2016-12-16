@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
     private GridView gridView;
-    private EditText user_input;
 
     public ArrayList<String> urls;
 
@@ -144,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
                 extras.putString("ADD TO FAVORITES", null);
                 newActivity.putExtras(extras);
                 startActivity(newActivity);
+                return true;
             case R.id.log_out:
                 Toast.makeText(this, "USER WILL BE LOGGED OUT", Toast.LENGTH_SHORT).show();
                 FirebaseAuth.getInstance().signOut();
@@ -159,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 };
+                return true;
             // the default option
             default:
                 return super.onOptionsItemSelected(item);
